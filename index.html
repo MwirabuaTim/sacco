@@ -1,0 +1,154 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+		<!-- to be filled -->
+	    <meta name="description" content=""/>
+	    <meta name="keywords" content=""/>
+
+    	<title>ELIKYA APP EXPERIENCE</title>
+
+	    <!-- Favicons -->
+	    <link rel="shortcut icon" type="image/png" href="./images/logo.jpg"/>
+	    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.ico"/>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<style>
+		@font-face {
+
+			font-family: 'appfont';
+			    src: local('appfont'), local('appfont'), url('./fonts/Exo-Light.otf') format('truetype');
+			}
+
+			.demo{
+				height: 100%;
+				width: 100%;
+				background-image: url(./images/phone.png); 
+				background-repeat: no-repeat;
+				background-size: 400px 600px;
+				background-position: 30px 0px;
+				min-height: 600px;
+			}
+			.demo h2{
+				padding-top: 55px;
+				color: #fff;
+				margin-left: 185px;
+			}
+			#screen{
+				width: 252px;
+				height: 403px;
+				margin-left: 105px;
+				margin-top: 20px;
+				text-align: center;
+			}
+			#screen iframe{
+				width: 100%;
+				height: 100%;
+				display: none;
+			}
+			#screen .bg{
+				width: 100%;
+				height: 100%;
+				background-image: url(./images/screen.jpg);
+				background-size: cover;
+				z-index: 1;
+				font-family: "appfont", cursive, sans-serif;
+				color: white;
+				padding-top: 50px;
+			}
+			#screen .bg .instruct{
+				font-size: 1.5em;
+			}
+			#screen .bg .time{
+				font-size: 2.5em;
+				margin-top: 250px;
+			}
+		</style>
+	</head>
+	<body class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>ELIKYA 	APP EXPERIENCE</h1>
+					<br>
+					<p>
+						Beatae gravida aenean libero. 
+						Volutpat cursus litora praesent sint faucibus! Ad perspiciatis facilisi, soluta labore? Elit, ex excepteur doloribus sint. Aliquid, sociis parturient atque, semper, cumque aut? Nisi fermentum ipsum semper doloribus ratione pretium.
+					</p>
+					<br>
+					<br>
+					<div class="text-center">
+						<a href="#" class="btn btn-lg btn-success">Google Play</a>
+						<a href="#" class="btn btn-lg btn-success">iTunes</a>
+						<a href="#" class="btn btn-lg btn-success">BlackBerry</a>
+						<a href="#" class="btn btn-lg btn-success">WindowsPhone</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="demo">
+
+						<h2>DEMO</h2>
+						<div id="screen">
+			                <!-- <iframe src="demo.html"></iframe> -->
+			                <iframe src="./jqm/demos"></iframe>
+			                <div class="bg">
+							    <div class="instruct">Mouse over or click to unlock phone.</div>
+							    <div class="time">3.30am</div>
+			                </div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script>
+		    $(function() {
+		        var el =  $('iframe');
+		        var dim = el.offset();
+
+		        var winwd = $(window).width()
+
+		        function screenSaver() {
+		            // console.log(el)
+		            $('#screen').animate({top: dim.top, left: dim.left}).fadeIn(1000)
+		        }
+
+		        screenSaver();
+		        $('#screen').on('click mouseover', function() {
+		            $(this).find('.bg').hide();
+		            setTimeout(function() { 
+		            	$('#screen iframe').show();
+		            }, 200);
+		        })
+
+		        $('#screen').mouseleave(function() {
+		            setTimeout(function() { 
+		            	$('#screen iframe').hide();
+		            }, 6000);
+		            setTimeout(function() { 
+		            	$('#screen .bg').fadeIn();
+		            }, 6000);
+		        })
+
+		        function ShowTime() {
+		            var now = new Date( );
+		            var dt = new Date( now.valueOf());
+		            $('.time').html(dt.toLocaleTimeString().toLocaleLowerCase())
+
+		            if($(window).width() !== winwd) {
+		                screenSaver();
+		            }
+		        }
+
+		        window.setInterval(ShowTime, 1000);
+
+		    })
+		</script>
+	</body>
+</html>
