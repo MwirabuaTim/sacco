@@ -34,39 +34,48 @@
 <body>
 <div data-role="page" id="page-success" data-dom-cache="true"><!-- page-->
 	<div data-role="header" data-theme="a" class="bluee-underline">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="./my-account" class="ui-btn ui-btn-b bluee-nano">Account</a></li>
+				<li><a href="./timeline" class="ui-btn ui-btn-b bluee-nano">Timeline</a></li>
+				<li><a href="./trending" class="ui-btn ui-btn-b bluee-nano">Trending</a></li>
+				<li><a href="./stats" class="ui-btn ui-btn-b bluee-nano">Search</a></li>
+			</ul>
+		</div>
+	</div><!-- /header -->
+
 	<div data-role="main" class="bluee-underline">
-		<div class="l2 bluee">
-			Done!
+		<div class="l2 bluee f12">
+			Harvest Schedule
+			<br>Elykya Weekly Lunch Pool
 		</div>
 	</div>
 
-	</div><!-- /header -->
+  <div class="ui-content" role="main">
+    <p class="sep">Friday August 30th 2013: Chris Senga</p>
+    <p class="sep">Friday September 6th 2013: Abou Kone</p>
+    <p class="sep">Friday September 13th 2013: Fally Ipupa</p>
+    <p class="sep">Friday September 20th 2013: Baba Maal</p>
+    <p class="sep">Friday September 27th 2013: Chris Senga</p>
+    <p class="sep">Friday October 4th 2013: Abou Kone</p>
+    <p class="sep">Friday September 11th 2013: Fally Ipupa</p>
+  </div>
 
+	<br>
+	<br>
 
-	<div class="ui-content" role="main">
-
-		<form action="/create-vesting-1" method="get">
+	<div data-role="footer" data-theme="a" class="bluee-bg">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="./vesting-edit" data-icon="edit"></a></li>
+				<li><a href="./vesting-schedule" data-icon="calendar"></a></li>
+				<li><a href="./vesting-members" data-icon="bullets"></a></li>
+				<li><a href="./edit-account" data-icon="gear"></a></li>
+			</ul>
+		</div>
+	</div><!-- /footer -->
 		
-			<p>Congratulations, your vesting has been created successfully! Now all you need to do is lay back and wait for your friends to confirm their participation. Once everybody is signed up and confirmed, you can then choose a start-date to start vesting.
-	        </p>
-	        <br>
-	        <div class="text-center">
-			<a href="./vesting-details" data-role="none" class="btn btn-sm btn-gray">View Vesting</a>
-	        <br>
-	        <br>
-			<a href="./my-account" data-role="none" class="btn btn-sm btn-gray">My Account</a>
-	        <br>
-	        <br>
-			<a href="#" data-role="none" class="btn btn-sm btn-gray">Community</a>
-	        </div>
-	        <br>	         
-			<br>
 
-		</form>
-
-	</div>
-
-	
 </div> 	 	
 
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>

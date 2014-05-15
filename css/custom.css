@@ -125,11 +125,16 @@ fieldset[disabled] .btn-bluee.active {
 .l2{
 	padding:0.5em;
 }
-.sep{
+p.sep{
 	 border-bottom-style: solid; 
 	 border-bottom-width:1px;
 	 border-bottom-color:#ddd;
 	 padding:1em;
+}
+p.clk:hover, p.clk:active{
+	 background-color: #B0D9E8;
+	 border:1px solid #22B0E4;
+	 cursor: pointer;
 }
 [data-role=footer] {
 	bottom:0; 
@@ -148,4 +153,10 @@ label small{
 }
 .ui-table-columntoggle-btn {
     display: none !important;
+}
+.f12{
+	font-size: 12px;
+}
+.f10{
+	font-size: 10px;
 }
