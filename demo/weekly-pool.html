@@ -36,7 +36,7 @@
 	<div data-role="header" data-theme="a" class="bluee-underline">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="./account" class="ui-btn ui-btn-b bluee-nano active">Account</a></li>
+				<li><a href="./account" class="ui-btn ui-btn-b bluee-nano">Account</a></li>
 				<li><a href="./timeline" class="ui-btn ui-btn-b bluee-nano">Timeline</a></li>
 				<li><a href="./trending" class="ui-btn ui-btn-b bluee-nano">Trending</a></li>
 				<li><a href="./stats" class="ui-btn ui-btn-b bluee-nano">Search</a></li>
@@ -45,35 +45,72 @@
 	</div><!-- /header -->
 
 	<div data-role="main" class="bluee-underline">
-		<div class="acc s60 bluee">
-			My Account
-		</div>
-		<div class="pull-right">
-			<img class="inline" src="../images/user.jpg"/>
+		<div class="l2 bluee">
+			Elykya Weekly Lunch Pool
 		</div>
 	</div>
 
-	<div class="ui-content" role="main">
-		<div class="text-center bold">Summary</div>
-		<p>Harvests to date: $3500</p>
-		<div class="text-center bold">Seeds</div>
-		<p>Next Seeding Due Date: 09/23/2013</p>
-		<p>Seed: $20</p>
-		<div class="text-center bold">Harvest</div>
-		<p>Next Harvest Date: 08/05/2013</p>
-		<p>Harvest: $200</p>
+	<div class="ui-content jqm-content" role="main">
 
+	<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable">
+      <tbody>
+        <tr>
+          <td>Harvest Target:</td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td>Seed:</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Frequency:</td>
+          <td>Every Friday</td>
+        </tr>
+        <tr>
+          <td>Next Seeding:</td>
+          <td>Thursday August 29th 2013</td>
+        </tr>
+        <tr>
+          <td>Next Harvest:</td>
+          <td>Friday August 30th 2013</td>
+        </tr>
+        <tr>
+          <td>Who's Next?:</td>
+          <td>Chris Senga</td>
+        </tr>
+        <tr>
+          <td>My Next Turn?</td>
+          <td>Friday September 6th 2013</td>
+        </tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Started On:</td>
+          <td>07/19/2013</td>
+        </tr>
+        <tr>
+          <td>Ends:</td>
+          <td>8/24/2014</td>
+        <tr>
+
+      </tbody>
+    </table>
+			
 	</div>
-
-
+	<br>
+	<br>
 
 	<div data-role="footer" data-theme="a" class="bluee-bg">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="./account" data-icon="user"></a></li>
-				<li><a href="./my-vestings" data-icon="bullets"></a></li>
-				<li><a href="./vesting-details" data-icon="clock"></a></li>
-				<li><a href="#" data-icon="info"></a></li>
+				<li><a href="./edit" data-icon="edit"></a></li>
+				<li><a href="./schedule" data-icon="calendar"></a></li>
+				<li><a href="./members" data-icon="bullets"></a></li>
 				<li><a href="#" data-icon="gear"></a></li>
 			</ul>
 		</div>
@@ -81,6 +118,7 @@
 		
 
 </div> 	 	
+
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.min.js"></script>
 <script type="text/javascript" src="../js/jquery.easing.compatibility.js"></script>

@@ -146,3 +146,6 @@ label small{
 	font-size: 12px;
 	font-weight: 600;
 }
+.ui-table-columntoggle-btn {
+    display: none !important;
+}
