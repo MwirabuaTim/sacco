@@ -142,3 +142,7 @@ fieldset[disabled] .btn-bluee.active {
 	margin: 0px !important;
 	border-top: 0px;
 }
+label small{
+	font-size: 12px;
+	font-weight: 600;
+}

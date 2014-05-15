@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- to be filled -->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+	<title>ELIKYA APP EXPERIENCE</title>
+
+    <!-- Favicons -->
+  <!--   <link rel="shortcut icon" type="image/png" href="../images/logo.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico"/> -->
+	<link rel="shortcut icon" href="../images/favicon.ico">
+
+
+	<!-- jquery mobile -->
+	<link rel="stylesheet" href="../jqm/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="../jqm/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="../jqm/jquery.mobile.icons-1.4.2.min.css" />
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" href="../css/jqm-demos.css">
+	<link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+<div data-role="page" id="page-success" data-dom-cache="true"><!-- page-->
+	<div data-role="header" data-theme="a" class="bluee-underline">
+	<div data-role="main" class="bluee-underline">
+		<div class="l2 bluee">
+			Create A Vesting
+		</div>
+	</div>
+
+	</div><!-- /header -->
+
+
+	<div class="ui-content" role="main">
+
+		<form action="/create-vesting-1" method="get">
+		
+			<br>
+			<b>Tag this vesting:<b>
+	         <input type="text" name="name" id="name" value="" placeholder="#lunch, #office">
+
+			<br>
+			<b>Make this vesting:</b>
+			<label>
+			<input type="radio" name="radio-choice-0" id="radio-choice-0a"><small>Public:</small><p>Other users will be able to see the tags associated with this vesting and the harvest target. Member's seed information remain private.</p>
+			</label>
+			<br>
+			<label>
+			<input type="radio" name="radio-choice-0" id="radio-choice-0a"><small>Private:</small><p>This vesting will only be accessible and visible by members you invite to it.</p>
+			</label>
+			<br>
+			<br>
+
+		</form>
+
+	</div>
+
+			
+
+	<div data-role="footer" data-theme="a" class="bluee-bg">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="./create-vesting-tag" data-icon="carat-r"></a></li>
+			</ul>
+		</div>
+	</div><!-- /footer -->
+
+</div> 	 	
+
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.compatibility.js"></script>
+</body>
+</html>
