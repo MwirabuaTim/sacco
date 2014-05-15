@@ -97,7 +97,7 @@ fieldset[disabled] .btn-bluee.active {
 .bluee-nano{
 	border-bottom: 2px solid #22B0E4 !important;
 }
-.bluee-nano:hover{
+.bluee-nano:hover, .bluee-nano.active{
 	background-color: #33819D !important;
 	padding-bottom: 5px;
 	border-bottom: 5px solid #22B0E4 !important;
