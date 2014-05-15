@@ -46,72 +46,54 @@
 
 	<div data-role="main" class="bluee-underline">
 		<div class="l2 bluee">
-			Elykya Weekly Lunch Pool
+			Member Settings
 		</div>
 	</div>
 
-	<div class="ui-content jqm-content" role="main">
+  <div class="ui-content" role="main">
+    
+  	<br>
+  	<b>Seed With:</b>
+  	<br>
+  	<select name="select-native-2" id="select-native-2" data-mini="true" data-inline="true">
+  		<option value="1">Dwolla</option>
+  		<option value="2">Paypal</option>
+  		<option value="3">VISA 3456</option>
+  		<option value="4">Bank of America 7645</option>
+  	</select>
+  	<br>
+  	<b>When To Seed</b>
+  	<br>
+  	<select name="select-native-3" id="select-native-2" data-mini="true" data-inline="true">
+  		<option value="1">24 hours before harvest</option>
+  		<option value="1">Every Friday</option>
+  		<option value="2">Every 21st</option>
+  		<option value="3">Every 5pm</option>
+  		<!-- <option value="4">Every Friday</option> -->
+  	</select>
+  	<br>
+  	<b>Harvest With:</b>
+  	<br>
+  	<select name="select-native-2" id="select-native-2" data-mini="true" data-inline="true">
+  		<option value="1">Dwolla</option>
+  		<option value="2">Paypal</option>
+  		<option value="3">VISA 3456</option>
+  		<option value="4">Bank of America 7645</option>
+  	</select>
+  	<br>
+  	<br>
+  	<p>Leaving a vesting requires approval from all members</p>
+  	<a href="#" data-role="none" class="btn btn-sm btn-gray black">I Want Out</a>
 
-	<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable">
-      <tbody>
-        <tr>
-          <td>Harvest Target:</td>
-          <td>$40</td>
-        </tr>
-        <tr>
-          <td>Seed:</td>
-          <td>$10</td>
-        </tr>
-        <tr>
-          <td>Frequency:</td>
-          <td>Every Friday</td>
-        </tr>
-        <tr>
-          <td>Next Seeding:</td>
-          <td>Thursday August 29th 2013</td>
-        </tr>
-        <tr>
-          <td>Next Harvest:</td>
-          <td>Friday August 30th 2013</td>
-        </tr>
-        <tr>
-          <td>Who's Next?:</td>
-          <td>Chris Senga</td>
-        </tr>
-        <tr>
-          <td>My Next Turn?</td>
-          <td>Friday September 6th 2013</td>
-        </tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Started On:</td>
-          <td>07/19/2013</td>
-        </tr>
-        <tr>
-          <td>Ends:</td>
-          <td>8/24/2014</td>
-        <tr>
+  </div>
 
-      </tbody>
-    </table>
-			
-	</div>
 	<br>
 	<br>
 
 	<div data-role="footer" data-theme="a" class="bluee-bg">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="./vesting-edit-member" data-icon="edit"></a></li>
-				<li><a href="./vesting-schedule" data-icon="calendar"></a></li>
-				<li><a href="./vesting-members" data-icon="bullets"></a></li>
-				<li><a href="./edit-account" data-icon="gear"></a></li>
+				<li><a href="./vesting-edit-payment" data-icon="check"></a></li>
 			</ul>
 		</div>
 	</div><!-- /footer -->
