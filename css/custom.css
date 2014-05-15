@@ -1,0 +1,139 @@
+.ui-header h1, .ui-header h2{
+	margin: 0px !important;
+}
+.ui-header{
+	margin: 0px !important;
+}
+.bluee{
+	color:#22B0E4;
+	font-weight: bold;
+}
+.bluee-bg{
+	background-color: #33B5E5;
+}
+.bluee-bg a{
+	background-color: #33B5E5 !important;
+	height: 3em !important;
+}
+.bluee-bg a{
+	border: none;
+}
+.bluee-bg a:after{
+	background-color: transparent;
+}
+.btn-bluee {
+	color: #fff !important;
+	font-weight: bold;
+	padding: 5px 15px;
+	background-color: #A0D4E7;
+	border: 1px solid #22B0E4;
+	box-shadow:  0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+	border-radius: 2px;
+}
+.btn-gray {
+	color: #fff !important;
+	font-weight: bold;
+	padding: 5px 7px;
+	border: 1px solid #D4D4D4;
+	box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+	border-radius: 1px;
+	background-color: rgb(221, 221, 221);
+
+	/*font-size: 12px;
+	line-height: 1.5;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;*/
+}
+.btn-gray:hover{
+	color: #fff;
+	background-color: #aaa;
+	border: 1px solid #666;
+	box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.5);
+} 
+.btn-bluee:hover,
+.btn-bluee:focus,
+.btn-bluee:active,
+.btn-bluee.active,
+.open .dropdown-toggle.btn-bluee {
+	color: #fff;
+	background-color: #59B2FF;
+	border-color: #285e8e;
+}
+.btn-bluee:active,
+.btn-bluee.active,
+.open .dropdown-toggle.btn-bluee {
+	background-image: none;
+}
+.btn-bluee.disabled,
+.btn-bluee[disabled],
+fieldset[disabled] .btn-bluee,
+.btn-bluee.disabled:hover,
+.btn-bluee[disabled]:hover,
+fieldset[disabled] .btn-bluee:hover,
+.btn-bluee.disabled:focus,
+.btn-bluee[disabled]:focus,
+fieldset[disabled] .btn-bluee:focus,
+.btn-bluee.disabled:active,
+.btn-bluee[disabled]:active,
+fieldset[disabled] .btn-bluee:active,
+.btn-bluee.disabled.active,
+.btn-bluee[disabled].active,
+fieldset[disabled] .btn-bluee.active {
+	background-color: #A0D4E7;
+	border-color: #22B0E4;
+}
+.btn-bluee .badge {
+	color: #A0D4E7;
+	background-color: #fff;
+}
+
+.bluee-underline{
+	border-bottom: 2px solid #22B0E4;
+}
+.bluee-nano{
+	border-bottom: 2px solid #22B0E4 !important;
+}
+.bluee-nano:hover{
+	background-color: #33819D !important;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #22B0E4 !important;
+}
+.s60{
+	display: inline-block;
+	width: 60%;
+}
+.acc{
+	padding: 1.6em 0px;
+	padding-left: 1em;
+}
+.ui-navbar a{
+	font-size: .8em !important;
+	padding: .7em 0em;
+}
+.bold{
+	font-weight: bold;
+}
+.ui-content p{
+	font-size: 10px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.l2{
+	padding:0.5em;
+}
+.sep{
+	 border-bottom-style: solid; 
+	 border-bottom-width:1px;
+	 border-bottom-color:#ddd;
+	 padding:1em;
+}
+[data-role=footer] {
+	bottom:0; 
+	/*position:absolute !important; */
+	top: auto !important; 
+	width:100%;
+} 
