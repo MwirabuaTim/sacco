@@ -136,7 +136,7 @@ fieldset[disabled] .btn-bluee.active {
 	position:absolute !important; 
 	top: auto !important; 
 	width:100%;
-	margin-bottom: -1px;
+	border-bottom: 0px;
 } 
 .ui-header {
 	margin: 0px !important;
