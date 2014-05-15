@@ -133,7 +133,12 @@ fieldset[disabled] .btn-bluee.active {
 }
 [data-role=footer] {
 	bottom:0; 
-	/*position:absolute !important; */
+	position:absolute !important; 
 	top: auto !important; 
 	width:100%;
+	margin-bottom: -1px;
 } 
+.ui-header {
+	margin: 0px !important;
+	border-top: 0px;
+}
