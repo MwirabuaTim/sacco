@@ -186,3 +186,7 @@ p.sep span{
 	width: 85%;
 	display: inline-block;
 }
+.ui-table td {
+	line-height: 1.5em;
+	font-size: .8em;
+}
