@@ -182,3 +182,7 @@ label small{
 	color: gold;
 	cursor: pointer;
 }
+p.sep span{
+	width: 85%;
+	display: inline-block;
+}
