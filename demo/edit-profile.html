@@ -33,56 +33,42 @@
 </head>
 <body>
 <div data-role="page" id="page-success" data-dom-cache="true"><!-- page-->
-	<div data-role="header" data-theme="a" class="bluee-underline">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="./my-account" class="ui-btn ui-btn-b bluee-nano">Account</a></li>
-				<li><a href="./timeline" class="ui-btn ui-btn-b bluee-nano">Timeline</a></li>
-				<li><a href="./trending" class="ui-btn ui-btn-b bluee-nano">Trending</a></li>
-				<li><a href="./stats" class="ui-btn ui-btn-b bluee-nano">Search</a></li>
-			</ul>
-		</div>
-	</div><!-- /header -->
+		<div data-role="header" data-theme="a" class="bluee-underline">
+		<h2 class="bluee">Edit My Profile</h2>
+		</div><!-- /header -->
 
-	<div data-role="main" class="bluee-underline">
-		<div class="l2 bluee">
-			Add a Payment Method
-		</div>
-	</div>
-
-	<div class="ui-content" role="main">
+		<div class="ui-content" role="main">
+	
+			<form action="./my-account" method="get">
 		
+		         <input type="text" name="name" id="name" value="Chris" placeholder="First Name">
+		         <input type="text" name="name" id="name" value="Senga" placeholder="Second Name">
+		         <input type="text" name="name" id="name" value="1100 East St" placeholder="Street Address">
+		         <input type="text" name="name" id="name" value="Laurel" placeholder="City">
+		         <input type="text" name="name" id="name" value="MD" placeholder="Country">
+		         <input type="text" name="name" id="name" value="20707" placeholder="Address">
+				<br>
+				<p>Birth Date:</p>
+		         <input type="text" name="name" id="name" value="12/21/1965" placeholder="">
+				<br>
+		        
+			</form>
+
+		</div>
 		<br>
-		<p>In order to recieve money from the vestings or seed money into vestings, you need to set up a transaction provider. Below is a list of providers that we currently support.</p>
-
-		<label>
-			<input type="radio" name="radio-choice-0" id="radio-choice-0a"><small>Dwolla</small>
-			<p>The best way to move money.</p>
-			<p>No percentages. No hidden fees. Just 25&cent; per transaction or fee for transactions $10 or less.</p>
-		</label>
 		<br>
-		<!-- &#162; -->
+
+		<div data-role="footer" data-theme="a" class="bluee-bg">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="./edit-profile" data-icon="check"></a></li>
+				</ul>
+			</div>
+		</div><!-- /footer -->
+			
+
+	</div> 	 	
 		
-		<div class="text-center">
-			<a href="./vesting-details" data-role="none" class="btn btn-sm btn-gray black">Select</a>
-		</div>
-
-	</div>
-
-	<br>
-	<br>
-
-	<div data-role="footer" data-theme="a" class="bluee-bg">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="./vesting-details" data-icon="check"></a></li>
-			</ul>
-		</div>
-	</div><!-- /footer -->
-		
-
-</div> 	 	
-
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.min.js"></script>
 <script type="text/javascript" src="../js/jquery.easing.compatibility.js"></script>
