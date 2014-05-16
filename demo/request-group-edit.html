@@ -45,22 +45,40 @@
 	</div><!-- /header -->
 
 	<div data-role="main" class="bluee-underline">
-		<div class="l2 bluee f12">
-			Members of Elykya Weekly Lunch Pool
+		<div class="l2 bluee">
+			Request a Group Edit
 		</div>
 	</div>
 
-  <div class="ui-content" role="main">
-    <p class="sep clk">Abou Kone</p>
-    <p class="sep clk">Chris Senga</p>
-    <p class="sep clk">Fally Ipupa</p>
-    <p class="sep clk">Baba Maal</p>
+	<div class="ui-content" role="main">
+		
+		
+		<form action="/create-vesting-tag" method="get">
+			
+			<input type="text" name="name" id="name" value="" placeholder="Vesting 1">
 
-    <div class="text-center">
-		<a href="./request-group-edit" data-role="none" class="btn btn-sm btn-bluee">Request Group Edit</a>
-    </div>
+			<p>Harvest Target</p>
+			<input type="text" name="amount" id="name" value="" placeholder="$200">
 
-  </div>
+			<p>Seed</p>
+			<input type="text" name="amount" id="name" value="" placeholder="$50">
+
+			<p>Frequency</p>
+			<select name="select-native-3" id="select-native-2" data-mini="true">
+				<option value="1">Every Friday</option>
+				<option value="2">Every 21st</option>
+				<option value="3">Every 5pm</option>
+				<!-- <option value="4">Every Friday</option> -->
+			</select>
+			
+			<p class="red">** Any change to the vesting requires a group approval. You can request a change here and all other members will be notified and if all approve, the change will be processed. **</p>
+
+			<br>
+
+		</form>
+
+
+	</div>
 
 	<br>
 	<br>
@@ -68,10 +86,7 @@
 	<div data-role="footer" data-theme="a" class="bluee-bg">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="./vesting-edit-member" data-icon="edit"></a></li>
-				<li><a href="./vesting-schedule" data-icon="calendar"></a></li>
-				<li><a href="./vesting-members" data-icon="bullets"></a></li>
-				<li><a href="./edit-account" data-icon="gear"></a></li>
+				<li><a href="./vesting-details" data-icon="check"></a></li>
 			</ul>
 		</div>
 	</div><!-- /footer -->
