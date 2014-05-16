@@ -26,6 +26,7 @@
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
 
 	<!-- custom -->
 	<link rel="stylesheet" href="../css/jqm-demos.css">
@@ -52,9 +53,8 @@
 
 	<div class="ui-content" role="main">
 		
-		
 		<form action="/create-vesting-tag" method="get">
-			
+
 			<input type="text" name="name" id="name" value="" placeholder="Vesting 1">
 
 			<p>Harvest Target</p>
@@ -64,13 +64,13 @@
 			<input type="text" name="amount" id="name" value="" placeholder="$50">
 
 			<p>Frequency</p>
-			<select name="select-native-3" id="select-native-2" data-mini="true">
+			<select name="select-native-3" id="select-native-2" data-mini="true" data-inline="true">
 				<option value="1">Every Friday</option>
 				<option value="2">Every 21st</option>
 				<option value="3">Every 5pm</option>
 				<!-- <option value="4">Every Friday</option> -->
 			</select>
-			
+
 			<p class="red">** Any change to the vesting requires a group approval. You can request a change here and all other members will be notified and if all approve, the change will be processed. **</p>
 
 			<br>
@@ -86,7 +86,7 @@
 	<div data-role="footer" data-theme="a" class="bluee-bg">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="./vesting-details" data-icon="check"></a></li>
+				<li><a href="./vesting-details"><i class="fa fa-save fa-15x white"></i></a></li>
 			</ul>
 		</div>
 	</div><!-- /footer -->

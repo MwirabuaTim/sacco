@@ -129,7 +129,7 @@ p.sep{
 	 border-bottom-style: solid; 
 	 border-bottom-width:1px;
 	 border-bottom-color:#ddd;
-	 padding:1em;
+	 padding:1em 0em;
 }
 p.clk:hover, p.clk:active{
 	 background-color: #B0D9E8;
@@ -165,4 +165,20 @@ label small{
 }
 .red{
 	color: red;
+}
+.white{
+	color: white;
+}
+.gray{
+	color: #888;
+}
+.fa-15x{
+	font-size: 1.5em;
+}
+.fa-13x{
+	font-size: 1.3em;
+}
+.fa-star-o:hover{
+	color: gold;
+	cursor: pointer;
 }
